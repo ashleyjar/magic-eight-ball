@@ -7,7 +7,7 @@ using namespace std;
 
 void playAgain(string answers[20]) {
   string question;
-  cout << "Ask another question to get another answer. To quit press 'q' and then enter." << endl << endl;
+  cout << "Ask another question to get another answer. To quit press 'q' and then enter." << endl;
   getline(cin, question);
   if (question == "q" || question == "Q")
     cout << "Goodbye";
@@ -21,7 +21,7 @@ void playAgain(string answers[20]) {
 
 void startGame(string answers[20]) {
   string question;
-  cout << "Ask a yes or no question. Then press enter." << endl << endl;
+  cout << "Ask a yes or no question. Then press enter." << endl;
   getline(cin, question);
   int choice = rand() % 20;
   cout << answers[choice] << endl << endl;
